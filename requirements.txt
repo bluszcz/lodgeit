@@ -1,0 +1,8 @@
+# pip install -r requirements.txt
+werkzeug
+sqlalchemy
+babel
+jinja2
+pygments
+pil
+simplejson

@@ -27,15 +27,15 @@ mercurial repository. To do that you create a new folder ``lodgeit-dev`` in your
 projects directory and change into it. There we initialize the virtual
 environment and check out LodgeIt (main branch)::
 
-	hg clone http://dev.pocoo.org/hg/lodgeit-main lodgeit
+	git clone https://github.com/bluszcz/lodgeit.git
 
 Right before we can initialize the virtual environment we need to install some
 development packages to compile the python imaging library.
 
 For Ubuntu again ``aptitude`` (as root)::
 
-    sudo aptitude install build-essential
-    apt-get build-dep python-imaging
+    sudo apt-get install build-essential
+    sudo apt-get build-dep python-imaging
 
 Now it's possible to install the virtual environment. This is done with a simple
 Python command::
@@ -45,6 +45,12 @@ Python command::
     cd ..
     # make sure that the virtualenv is not activated. If yes, execute `deactivate`
     python bootstrap.py .
+
+Or you can make it manually:
+   
+   # assumed that you cloned your repo into ~/repo/lodgeit
+   virtualenv ~/python-lodgeit
+   ~/python-lodgeit/bin/pip install -r ~/repo/lodgeit/requirements.txt 
 
 You are ready to run now.
 
