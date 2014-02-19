@@ -16,14 +16,14 @@ Dependencies and virtual environment
 ====================================
 
 To get LodgeIt work properly we need those dependencies: Python (at least 2.5),
-python-setuptools and mercurial.
+python-setuptools.
 
-For Ubuntu (or any Debian based distribution) use ``aptitude`` to install::
+For Ubuntu (or any Debian based distribution) use ``apt-get`` to install::
 
-    aptitude install python-dev python-setuptools python-virtualenv mercurial
+    sudo apt-get install python-dev python-setuptools python-virtualenv 
 
 Now we can install LodgeIt. But first we need to check out LodgeIt from the
-mercurial repository. To do that you create a new folder ``lodgeit-dev`` in your
+git repository. To do that you create a new folder ``lodgeit-dev`` in your
 projects directory and change into it. There we initialize the virtual
 environment and check out LodgeIt (main branch)::
 
